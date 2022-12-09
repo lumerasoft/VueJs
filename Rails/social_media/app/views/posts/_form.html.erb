@@ -1,0 +1,19 @@
+
+<h2 style="text-align:center">Social Media</h2>
+
+<%= form_with model: [ @user, @user.posts.build ] do |form| %>
+<table style="align:center;padding-left:500px">
+
+<tr>
+    <th><%= form.label :Post %><br></th>
+    <th> <%= form.text_area :post_message, size: "25x5" %></th>
+</tr>
+<tr>
+    <th><%= form.label :Tag %><br></th>
+    <th> <%= form.text_field :tag %></th>
+</tr>
+<tr> <th></th><th><%= form.submit %></th></tr>
+ 
+
+</table>
+<% end %>

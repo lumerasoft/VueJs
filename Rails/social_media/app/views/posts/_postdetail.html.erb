@@ -1,0 +1,7 @@
+<ul>
+  <% @posts.each do |post| %>  
+      <h2><%= post.post_message%></h2>
+      <h4>Tag:  <%= post.tag %></h4>
+     <h3><%= link_to "comment", post %></h3>
+  <% end %>
+</ul>

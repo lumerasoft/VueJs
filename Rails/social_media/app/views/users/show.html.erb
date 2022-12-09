@@ -1,0 +1,7 @@
+<%= render 'posts/form' %>
+<% User.all.each do |user| %>
+  <% user.recent_post.each do |post| %>
+    <%= post.post_message%> <br>
+<% end %>
+<% end %>
+

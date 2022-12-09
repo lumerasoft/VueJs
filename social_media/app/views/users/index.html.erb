@@ -1,0 +1,7 @@
+<%= render 'posts/postdetail' %>
+
+
+  <% @users.each do |user| %>       
+      <h4 style="padding-left:1000px"><%= link_to user.name,user%></h4>
+  <% end %>
+
